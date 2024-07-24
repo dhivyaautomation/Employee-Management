@@ -22,4 +22,5 @@ public class Department {
     @OneToMany(mappedBy = "department")
     @JsonManagedReference //Jackson will include the fields of the entity in the JSON output.
     private Set<Employee> employees = new HashSet<>();
+
 }
